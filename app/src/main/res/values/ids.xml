@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="enterKd" type="id" />
+    <item name="enterName" type="id" />
+    <item name="enterPrice" type="id" />
+    <item name="addName" type="id" />
+    <item name="printName" type="id" />
+    <item name="Kode" type="id" />
+    <item name="Price" type="id" />
+    <item name="Name" type="id" />
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRLContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".CRUDPesan">
+
+            <!--on below line we are creating
+            edit text for passing data-->
+            <EditText
+                android:id="@+id/enterDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Masukkan Tanggal"
+                android:textSize="22sp"/>
+
+            <!-- Edit text to enter age -->
+            <EditText
+                android:id="@+id/enterTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:hint="Masukkan Jam"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/enterNumTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:hint="Masukkan Nomor Meja"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/enterKodeMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:hint="Masukkan Kode Menu"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/enterPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:hint="Masukkan Harga"
+                android:textSize="22sp" />
+
+            <!-- Button to add Name -->
+            <Button
+                android:id="@+id/addName"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="#2196F3"
+                android:text="Tambah Pesan"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <!-- Button to print Name -->
+            <Button
+                android:id="@+id/printName"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="#2196F3"
+                android:text="Cetak Pesan"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp">
+                    <!-- Text view to get all name -->
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Tanggal\n\n"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <!-- Text view to get all ages -->
+                    <TextView
+                        android:id="@+id/Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Jam\n\n"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/NumTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Nomor Meja\n\n"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/KdMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Kode Menu\n\n"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:layout_weight="1"
+                        android:padding="10sp"
+                        android:text="Harga\n\n"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
